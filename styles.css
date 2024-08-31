@@ -1,0 +1,166 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f0f0f0;
+}
+
+/* Cabeçalho */
+header {
+    background: #ff6f61; /* Cor vibrante */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Cor de destaque */
+    transform: scale(1.1);
+}
+
+/* Seções */
+section {
+    padding: 4rem 2rem;
+    margin-top: 5rem; /* Espaço abaixo do cabeçalho fixo */
+    position: relative;
+}
+
+section:nth-child(even) {
+    background: #fff;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Descrição Narrativa */
+.narrativa-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.narrativa-wrapper img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.narrativa-wrapper img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.narrativa-text {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fluxograma */
+.fluxograma-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.fluxograma-wrapper img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fluxograma-wrapper img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Pseudocódigo */
+pre {
+    background: #333;
+    color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+pre::before {
+    content: 'Pseudocódigo';
+    position: absolute;
+    top: -1.5rem;
+    left: 1rem;
+    background: #333;
+    color: #f4f4f4;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #ff6f61;
+    color: #fff;
+    
+}
+/* Adiciona efeito de transição */
+.content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.content.visible {
+    opacity: 1;
+    transform: translateY
+}
